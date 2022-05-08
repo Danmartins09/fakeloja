@@ -1,0 +1,38 @@
+.categories{
+    display: flex;
+    justify-content: center;
+    .category{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 3rem 1rem;
+        
+        img{           
+            transition: all .5s ease;
+            clip-path: circle();
+            border: 8px solid white;
+            padding: 5px;
+            border-radius:50%
+        }
+        .categoryTitle{            
+            display: none;
+            position: absolute;
+            color: white;
+            font-weight: 500;
+            font-size: 1.5rem;
+            max-width: 140px;
+            text-align: center;
+        } 
+        &:hover{
+            img{           
+                border: 8px solid black;                
+                border-radius:50%;
+                filter: brightness(0.4);
+            }
+            .categoryTitle{
+                display: block;
+                
+            } 
+        }       
+    }
+}
