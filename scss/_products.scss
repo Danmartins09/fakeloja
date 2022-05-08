@@ -1,10 +1,12 @@
 .productsSection{
+    position: relative;
     .products{
-        .productsSlider{
-            display:flex;
-            flex-wrap: wrap;
-            justify-content: center;
+        max-width:1000px;
+        // .productsSlider{
+        //     // display:flex;
+        //     // flex-wrap: wrap;
+        //     justify-content: center;
             
-        }
+        // }
     }
 }             

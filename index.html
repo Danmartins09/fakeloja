@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="node_modules/glider-js/glider.css">
     <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <title>Loja Teste</title>
@@ -21,17 +20,15 @@
         </div>
     </header>
 
-    <div class="swipper banners">
+    <div class="swiper banners">
 
         <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="assets/banner1.png" alt="Banner 1"></div>
             <div class="swiper-slide"><img src="assets/banner2.png" alt="Banner 2"></div>
-
         </div>
-        <!-- If we need pagination -->
+
         <div class="swiper-pagination banners-pagination"></div>
 
-        <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
 
@@ -39,41 +36,42 @@
 
     <div class="categories">
         <div class="category">
-            <img src="assets/roupasMasculinas.png" alt="">
+            <img class="mensCloth" src="assets/roupasMasculinas.png" alt="">
             <span class="categoryTitle">Roupa Masculina</span>
         </div>
         <div class="category">
-            <img src="assets/roupaFeminina.png" alt="">
+            <img class="womensCloth" src="assets/roupaFeminina.png" alt="">
             <span class="categoryTitle">Roupa Feminina</span>
         </div>
         <div class="category">
-            <img src="assets/joias.png" alt="">
+            <img class="jewelery" src="assets/joias.png" alt="">
             <span class="categoryTitle">Joias</span>
         </div>
         <div class="category">
-            <img src="assets/eletronicos.png" alt="">
+            <img class="eletronics" src="assets/eletronicos.png" alt="">
             <span class="categoryTitle">Eletrônicos</span>
         </div>
     </div>
-<!-- 
+
     <section class="productsSection">
         <h2>Produtos</h2>
-        <div class="swiper products">
-            
-            <div class="swiper-wrapper productsSlider">
-              
-            </div>
-            
-            <div class="swiper-pagination products-pagination"></div>
-          
-            
-            <div class="swiper-button-prev products-button-prev"></div>
-            <div class="swiper-button-next products-button-next"></div>
-          
-          </div>
-    </section> -->
 
-    <div class="container">
+        <div class="swiper products">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper productsSlider">
+
+            </div>
+
+            <!-- If we need navigation buttons -->
+
+
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </section>
+
+    <!-- <div class="container">
         
         <section class="productsSection">
             <h2>Produtos</h2>
@@ -90,10 +88,8 @@
     
         </section>
     
-    </div>
+    </div> -->
 
-
-    <script src="node_modules/glider-js/glider.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="lojateste.js"></script>

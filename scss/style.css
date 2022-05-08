@@ -20,15 +20,18 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 1px solid #d5d5d5;
   border-radius: 4px;
-  margin: 1.5rem;
 }
 
 .item img {
   width: 200px;
   height: 200px;
   padding: 1rem;
+  margin: 0 auto;
   -o-object-fit: scale-down;
      object-fit: scale-down;
 }
@@ -106,15 +109,12 @@
   display: block;
 }
 
-.productsSection .products .productsSlider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.productsSection {
+  position: relative;
+}
+
+.productsSection .products {
+  max-width: 1000px;
 }
 
 .hot .ratedItens {
